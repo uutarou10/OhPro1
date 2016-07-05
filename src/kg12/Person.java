@@ -1,7 +1,11 @@
 package kg12;
 
 /**
- * Created by Kota Nonaka on 2016/07/05.
+ * 人をあらわすクラス。
+ * 人の名前、年齢、身長、体重を持ちます。
+ *
+ * @version 1.0
+ * @author Kota Nonaka
  */
 public class Person {
     private String name;
@@ -14,10 +18,19 @@ public class Person {
         this.weight = weight;
     }
 
+    /**
+     * このインスタンスのBMI値を返します。
+     * @return 体重 / (身長[m] * 身長[m])
+     */
     public double getBMI() {
         return weight / (height * height);
     }
 
+    /**
+     * このインスタンスの体重から引数の値を引きます。
+     * @throws IllegalArgumentException
+     * @param w
+     */
     public void diet(double w) {
         if (w < 0)throw new IllegalArgumentException();
 
