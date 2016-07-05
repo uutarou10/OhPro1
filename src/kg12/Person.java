@@ -28,8 +28,8 @@ public class Person {
 
     /**
      * このインスタンスの体重から引数の値を引きます。
-     * @throws IllegalArgumentException
-     * @param w
+     * @throws IllegalArgumentException wが0未満のとき
+     * @param w 引く重さ[kg]
      */
     public void diet(double w) {
         if (w < 0)throw new IllegalArgumentException();
