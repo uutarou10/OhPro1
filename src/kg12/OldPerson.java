@@ -7,12 +7,12 @@ package kg12;
  * @version 1.0
  * @author Kota Nonaka
  */
-public class Person {
+public class OldPerson {
     private String name;
     private double height;
     private double weight;
 
-    public Person(String name,double height,double weight){
+    public OldPerson(String name, double height, double weight){
         this.name = name;
         this.height = height;
         this.weight = weight;
