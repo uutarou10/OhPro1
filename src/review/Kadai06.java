@@ -11,7 +11,7 @@ public class Kadai06 {
         DateFormat df = DateFormat.getDateTimeInstance();
         Calendar cal = Calendar.getInstance();
         cal.add(Calendar.MONTH,10);
-        cal.add(Calendar.DAY_OF_MONTH,10);
+        cal.add(Calendar.DATE,10);
 
         System.out.println(df.format(cal.getTime()));
 
